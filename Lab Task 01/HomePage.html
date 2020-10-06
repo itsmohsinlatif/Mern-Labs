@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Web Page</title>
+</head>
+<fieldset>
+<body>
+ 
+    <div class="container">
+        <div class="alert alert-info" role="alert">
+            <h2 style="font-family: 'Times New Roman', Times, serif; background-color:turquoise; text-align: center;">Mohsin Latif (SP18-BCS-139)</h2>
+        </div >
+        
+        <h2 style=" font-family:Arial, Helvetica, sans-serif; text-align: center;  border-style: double; list-style-type: upper-alpha; " >Lab Task 01</h2>
+        <br/><br/><br/><br/>
+        <div class="row" style="background-color:lightsteelblue;">
+            <div class="col-md-8">
+                <h3 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">List of Persons</h3>
+                <table class="table" id="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" >Name</th>
+                            <th scope="col" >Gender</th>
+                            <th scope="col" >Age</th>
+                            <th scope="col" >City</th>
+                            <th scope="col" >Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4" style="background-color: rgb(123, 196, 199);">
+                <h3 style="visibility: visible;text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; "> Personal Information</h3>
+                <div id="form" style="border:1px solid black;padding:10px;  ;">
+                    
+                    <br>Name: <input type="text" name="name" id="name" required  placeholder="Please Enter Your Name" style="background-color:blanchedalmond;">
+                    <br/><br/>
+                    
+                    Gender: 
+                    <input type="radio" id="male" name="gender" value="male" required >
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <br/><br/>
+                    
+                    Age: <input type="text" name="age" id="age" required placeholder="Please Enter Your Age" style="background-color: blanchedalmond;">
+                    <br/><br/>
+                    
+                    <label for="city" >City: </label>
+                    <select name="city" id="city" style="background-color: blanchedalmond;" placeholder="Please Select Your City" >
+                        <option value="None">Please Select your City </option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Multan">Multan</option>
+                    </select><br/><br/>
+                    <input type="submit" class='btn btn-success' name="add" id="add" onclick="addPerson();" value="Add">
+                    <input type="submit" class=' btn btn-info' name="update" style="color:white;" onclick="updatePerson();" value="Update">
+                    <input type="submit" class=' btn btn-warning' name="reset" style="color:white" onclick="resetPerson();" value="Reset">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./MyScripts.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</fieldset>
+</html>
