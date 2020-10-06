@@ -1,1 +1,1 @@
-<?php   include("./HomePage.html") ?>
+<?php  include("./HomePage.html")  ?>
